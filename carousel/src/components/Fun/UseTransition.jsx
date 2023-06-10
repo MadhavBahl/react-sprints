@@ -2,7 +2,6 @@ import React from 'react';
 import { useTransition, animated } from 'react-spring';
 
 const DATA = [1, 2, 3];
-const COLORS = ['ORANGE', 'PINK', 'BLUE'];
 
 const UseTransition = () => {
     const transitions = useTransition(DATA, {
