@@ -5,6 +5,7 @@ import UseSpring from './Fun/UseSpring';
 import UseTransition from './Fun/UseTransition';
 import FunWithColors from './Fun/FunWithColors';
 import FunWithColorsAuto from './Fun/FunWithColorsAuto';
+import CarouselBasic from './Carousel/CarouselBasic';
 
 const App = () => {
     return (
@@ -12,7 +13,8 @@ const App = () => {
             {/* <UseSpring /> */}
             {/* <UseTransition /> */}
             {/* <FunWithColors /> */}
-            <FunWithColorsAuto />
+            {/* <FunWithColorsAuto /> */}
+            <CarouselBasic />
         </div>
     );
 };
