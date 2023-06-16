@@ -4,3 +4,14 @@
     flex-direction: row;
     justify-content: space-around;
 }
+
+.slides {
+    min-width: 70%;
+    min-height: 200px;
+}
+
+.carousel-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
