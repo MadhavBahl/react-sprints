@@ -6,6 +6,7 @@ import FunWithColorsAuto from './Fun/FunWithColorsAuto';
 import CarouselBasic from './Carousel/CarouselBasic';
 import CarouselBasicImage from './Carousel/CarouselBasicImage';
 import Hero from './Hero/Hero';
+import ContentSection from './ContentSection/ContentSection';
 import Footer from './Footer/Footer';
 
 import './App.css';
@@ -28,6 +29,9 @@ const App = () => {
             {/* <CarouselBasic /> */}
             {/* <CarouselBasicImage slides={SLIDES} /> */}
             <Hero />
+
+            <ContentSection />
+
             <Footer />
         </div>
     );

@@ -1,0 +1,20 @@
+.content-section-container {
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    flex-direction: row;
+    padding: 140px 50px;
+    justify-content: space-around;
+}
+
+.content-clm {
+    display: flex;
+    flex-direction: column;
+    /* TODO: Add a media query to make this 100% for mobile devices and so on... */
+    width: 40%;
+    padding: 0 50px;
+}
+
+.content-heading, .content-paragraph {
+    text-align: center;
+}
