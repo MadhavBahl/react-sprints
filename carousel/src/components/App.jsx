@@ -1,12 +1,14 @@
 import React from 'react';
-
-import './App.css';
 import UseSpring from './Fun/UseSpring';
 import UseTransition from './Fun/UseTransition';
 import FunWithColors from './Fun/FunWithColors';
 import FunWithColorsAuto from './Fun/FunWithColorsAuto';
 import CarouselBasic from './Carousel/CarouselBasic';
 import CarouselBasicImage from './Carousel/CarouselBasicImage';
+import Hero from './Hero/Hero';
+import Footer from './Footer/Footer';
+
+import './App.css';
 
 import img1 from './../assets/img1.jpg';
 import img2 from './../assets/img2.jpg';
@@ -24,7 +26,9 @@ const App = () => {
             {/* <FunWithColors /> */}
             {/* <FunWithColorsAuto /> */}
             {/* <CarouselBasic /> */}
-            <CarouselBasicImage slides={SLIDES} />
+            {/* <CarouselBasicImage slides={SLIDES} /> */}
+            <Hero />
+            <Footer />
         </div>
     );
 };
