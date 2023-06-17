@@ -1,0 +1,14 @@
+.footer {
+    display: flex;
+    width: 100%;
+    min-height: 100px;
+    justify-content: center;
+    align-items: center;
+    background: #3B3939;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.footer-link {
+    text-decoration: underline;
+    color: rgba(255, 255, 255, 0.9);
+}
