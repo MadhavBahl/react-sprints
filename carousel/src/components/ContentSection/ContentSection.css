@@ -18,3 +18,9 @@
 .content-heading, .content-paragraph {
     text-align: center;
 }
+
+.carousel-section-reverse {
+    flex-direction: row-reverse;
+    background-color: #F1F1F1;
+    z-index: -20;
+}

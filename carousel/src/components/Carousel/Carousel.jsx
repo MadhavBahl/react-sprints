@@ -5,7 +5,10 @@ import vectorImg from './../../assets/vector2.webp';
 
 import './Carousel.css';
 
-const Carousel = ({ slides = ['Slide1', 'Slide2', 'Slide3'] }) => {
+const Carousel = ({
+    slides = ['Slide1', 'Slide2', 'Slide3'],
+    transitionStyles,
+}) => {
     const [activeIndex, setActiveIndex] = useState(0);
 
     useEffect(() => {
@@ -18,11 +21,7 @@ const Carousel = ({ slides = ['Slide1', 'Slide2', 'Slide3'] }) => {
         };
     }, []);
 
-    const transitions = useTransition([activeIndex], {
-        from: { opacity: 0, display: 'none' },
-        enter: { opacity: 1, display: 'block' },
-        leave: { opacity: 0, display: 'none' },
-    });
+    const transitions = useTransition([activeIndex], transitionStyles);
 
     const nextSlide = () => {
         setActiveIndex((activeIndex + 1) % slides.length);

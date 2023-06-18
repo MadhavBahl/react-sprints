@@ -11,9 +11,13 @@ import img5 from './../../assets/img5.jpg';
 
 const SLIDES = [img1, img2, img3, img4, img5];
 
-const ContentSection = () => {
+const ContentSection = ({ isCarouselReverse, transitionStyles }) => {
     return (
-        <div className='content-section-container'>
+        <div
+            className={`content-section-container ${
+                isCarouselReverse && 'carousel-section-reverse'
+            }`}
+        >
             <div className='content-left content-clm'>
                 <h2 className='content-heading'>This is the content heading</h2>
                 <p className='content-paragraph'>
@@ -36,7 +40,7 @@ const ContentSection = () => {
                 </p>
             </div>
             <div className='content-right content-clm'>
-                <Carousel slides={SLIDES} />
+                <Carousel transitionStyles={transitionStyles} slides={SLIDES} />
             </div>
         </div>
     );

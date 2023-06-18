@@ -20,6 +20,54 @@ import img5 from './../assets/img5.jpg';
 const SLIDES = [img1, img2, img3, img4, img5];
 
 const App = () => {
+    const transition1 = {
+        from: { opacity: 0, display: 'none' },
+        enter: { opacity: 1, display: 'block' },
+        leave: { opacity: 0, display: 'none' },
+    };
+
+    const transition2 = {
+        from: { opacity: 0, transform: 'scale(0)', display: 'none' },
+        enter: { opacity: 1, transform: 'scale(1)', display: 'block' },
+        leave: { opacity: 0, transform: 'scale(0)', display: 'none' },
+    };
+
+    const transition3 = {
+        from: {
+            opacity: 0,
+            transform: 'perspective(600px) rotateX(180deg)',
+            display: 'none',
+        },
+        enter: {
+            opacity: 1,
+            transform: 'perspective(600px) rotateX(0deg)',
+            display: 'block',
+        },
+        leave: {
+            opacity: 0,
+            transform: 'perspective(600px) rotateX(-180deg)',
+            display: 'none',
+        },
+    };
+
+    const transition4 = {
+        from: {
+            opacity: 0,
+            transform: 'rotate(-180deg)',
+            display: 'none',
+        },
+        enter: {
+            opacity: 1,
+            transform: 'rotate(0deg)',
+            display: 'block',
+        },
+        leave: {
+            opacity: 0,
+            transform: 'rotateX(180deg)',
+            display: 'none',
+        },
+    };
+
     return (
         <div className=''>
             {/* <UseSpring /> */}
@@ -30,7 +78,16 @@ const App = () => {
             {/* <CarouselBasicImage slides={SLIDES} /> */}
             <Hero />
 
-            <ContentSection />
+            <ContentSection transitionStyles={transition1} />
+            <ContentSection
+                transitionStyles={transition2}
+                isCarouselReverse={true}
+            />
+            <ContentSection transitionStyles={transition3} />
+            <ContentSection
+                transitionStyles={transition4}
+                isCarouselReverse={true}
+            />
 
             <Footer />
         </div>
