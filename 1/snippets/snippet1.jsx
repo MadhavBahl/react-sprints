@@ -1,4 +1,3 @@
-import "./styles.css";
 import { useSpring, animated } from "react-spring";
 
 export default function App() {
